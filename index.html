@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="utff-8" />
+    <title>Lucas Benati</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="icon" type="image/png" href="images/Moon.png" />
+  </head>
+
+  <body>
+    <div class="container">
+      <!-- ASIDE -->
+      <div class="menu-btn"></div>
+      <aside>
+        <img
+          src="images/Lucas Benati.png"
+          alt="Lucas Benati's Photo"
+          class="my-photo"
+        />
+        <h1 class="my-name">Lucas Benati</h1>
+        <h2>
+          Designer Developer,<br />
+          Game Artist
+        </h2>
+        <h3>
+          Computer Science Technician and<br />
+          Graduating in Systems<br />
+          Analysis and Development
+        </h3>
+        <ul>
+          <li>
+            <a href="#about-me" class="aside-btn">• About me</a>
+          </li>
+          <li>
+            <a href="#professional-career" class="aside-btn"
+              >• Professional career</a
+            >
+          </li>
+          <li>
+            <a href="#academic-education" class="aside-btn"
+              >• Academic education</a
+            >
+          </li>
+          <li>
+            <a href="#my-portfolio" class="aside-btn">• My portfolio</a>
+          </li>
+          <li>
+            <a href="#contact-me" class="aside-btn">• Contact me</a>
+          </li>
+        </ul>
+        <p>Change page theme:</p>
+        <div class="theme-btn"></div>
+        <div class="my-links">
+          <a href="https://www.linkedin.com/in/lucas-benati/" target="_blank">
+            <img
+              src="images/White LinkedIn Icon.png"
+              alt="My LinkedIn"
+              class="my-linkedin"
+            />
+          </a>
+          <a href="https://www.behance.net/lucasbenati" target="_blank">
+            <img
+              src="images/White Behance Icon.png"
+              alt="My Behance"
+              class="my-behance"
+            />
+          </a>
+          <a href="https://github.com/LBenati" target="_blank">
+            <img
+              src="images/White GitHub Icon.png"
+              alt="My GitHub"
+              class="my-github"
+            />
+          </a>
+          <a href="https://gitlab.com/lucas_bnati" target="_blank">
+            <img
+              src="images/White GitLab Icon.png"
+              alt="My GitLab"
+              class="my-gitlab"
+            />
+          </a>
+        </div>
+      </aside>
+      <!-- PAGE -->
+      <section>
+        <article id="about-me">
+          <h1>Hi, I'm Lucas Benati</h1>
+          <p>
+            I’m designer developer and game artist<br />
+            I’m Computer Science Techinician and Graduating in<br />
+            Systems Analysis and Development<br />
+            and <span> I love pizza, lasagna and RPG.</span>
+          </p>
+        </article>
+        <article id="professional-career">
+          <h1>Professional Career</h1>
+          <p>
+            <span>Coffee Studios</span> (since 2022)<br />
+            Game Director<br />
+            <br />
+            <a href="https://www.keep2g.com" target="_blank">K2G</a> (since
+            2022)<br />
+            Designer Developer
+          </p>
+        </article>
+        <article id="academic-education">
+          <h1>Academic Education</h1>
+          <p>
+            <a href="https://ebac.art.br" target="_blank">EBAC</a> (since
+            2022)<br />
+            Professional course in Design Graphic<br />
+            <br />
+            <a href="https://www.fecap.br" target="_blank">FECAP</a> (since
+            2022)<br />
+            Graduation in System Analysis and Development<br />
+            <br />
+            <a href="http://oikabumlab.org.br/site/" target="_blank"
+              >Oi Kabum! Lab</a
+            >
+            (2021)<br />
+            Training course in Game Art<br />
+            <br />
+            <a href="http://smp.ifsp.edu.br" target="_blank">IFSP</a>
+            (2018-2021)<br />
+            Technical course in Computer Science
+          </p>
+        </article>
+        <article id="my-portfolio">
+          <h1>My Portfolio</h1>
+          <div class="portfolio">
+            <img src="images/portfolio/A Whale.png" alt="A Whale - Sketch" id="img1">
+            <img src="images/portfolio/stllacian0.png" alt="stllacian0 - Fine Art" id="img2">
+            <img src="images/portfolio/Balls Aquarium.png" alt="Balls Aquarium - Generative Art" id="img3">           
+            <img src="images/portfolio/Pôr-do-sol ao sul.jpg" alt="Pôr-do-sol ao sul - Photography" id="img4"> 
+          </div>
+        </article>
+      </section>
+      <!-- FOOTER -->
+      <footer id="contact-me">
+        <div class="my-links">
+          <a href="https://www.linkedin.com/in/lucas-benati/" target="_blank">
+            <img
+              src="images/White LinkedIn Icon.png"
+              alt="My LinkedIn"
+              class="my-linkedin"
+            />
+          </a>
+          <a href="https://www.behance.net/lucasbenati" target="_blank">
+            <img
+              src="images/White Behance Icon.png"
+              alt="My Behance"
+              class="my-behance"
+            />
+          </a>
+          <a href="https://github.com/LBenati" target="_blank">
+            <img
+              src="images/White GitHub Icon.png"
+              alt="My GitHub"
+              class="my-github"
+            />
+          </a>
+          <a href="https://gitlab.com/lucas_bnati" target="_blank">
+            <img
+              src="images/White GitLab Icon.png"
+              alt="My GitLab"
+              class="my-gitlab"
+            />
+          </a>
+        </div>
+        <p>Copyright © 2022 - All rights reserved - Lucas Benati</p>
+      </footer>
+    </div>
+  </body>
+
+  <script>
+    const themeBtn = document.querySelector(".theme-btn");
+    const container = document.querySelector(".container");
+
+    themeBtn.onclick = function () {
+      this.classList.toggle("active");
+      container.classList.toggle("active");
+    };
+
+    const menuBtn = document.querySelector(".menu-btn");
+    const aside = document.querySelector("aside");
+
+    menuBtn.onclick = function () {
+      this.classList.toggle("active");
+      aside.classList.toggle("active");
+    };
+  </script>
+</html>
